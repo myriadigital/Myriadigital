@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYRIADIGITAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Suspenso -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776; <!-- Ícone de três barras -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Lateral Suspenso -->
+    <div id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#services">Serviços</a>
+        <a href="#cities">Cidades Atendidas</a>
+        <a href="#gallery">Galeria</a>
+    </div>
+
+    <!-- Seção Home -->
+    <section id="home" class="home">
+        <h1>MYRIADIGITAL</h1>
+        <img src="sua-foto.jpg" alt="Foto de Ester" class="profile-pic">
+        <p>Bem-vindo/a à Myriadigital! Aqui você destaca o melhor da sua marca. Nossa empresa é focada em audiovisual e marketing, combinando o melhor dos dois mundos para melhor atendê-lo/a.</p>
+    </section>
+
+    <!-- Seção Blog -->
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <p>Em breve, você encontrará artigos e novidades sobre audiovisual e marketing aqui.</p>
+    </section>
+
+    <!-- Seção Galeria (Agora no Menu) -->
+    <section id="gallery" class="gallery">
+        <h2>Galeria</h2>
+        <p>Veja nossos trabalhos de audiovisual e fotografia.</p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+        <p><a href="https://wa.me/5512981380719?text=Olá,%20vim%20através%20do%20site%20da%20Myriad">Clique para conversar no WhatsApp</a></p>
+        <p><a href="mailto:myriadigital@gmail.com">myriadigital@gmail.com</a></p>
+        <p><a href="https://www.instagram.com/myriadigital">Instagram</a></p>
+        <p><a href="https://www.tiktok.com/@myriadigital">TikTok</a></p>
+        <p><a href="https://www.youtube.com/c/myriadigital">YouTube</a></p>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chat-icon" onclick="openChat()">
+        💬
+    </div>
+    <div id="chatbox" class="chatbox">
+        <div class="chat-header">
+            <span>Assistente Virtual</span>
+            <button class="close-btn" onclick="closeChat()">×</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message bot">Olá! Como posso te ajudar?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Escreva sua mensagem..." onkeydown="if(event.key === 'Enter') { sendMessage(); }">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 MYRIADIGITAL - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
